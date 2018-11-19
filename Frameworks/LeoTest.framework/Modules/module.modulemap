@@ -1,0 +1,11 @@
+framework module LeoTest {
+  umbrella header "LeoTest.h"
+
+  export *
+  module * { export * }
+}
+
+module LeoTest.Swift {
+    header "LeoTest-Swift.h"
+    requires objc
+}

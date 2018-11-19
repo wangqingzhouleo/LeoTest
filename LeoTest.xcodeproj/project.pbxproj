@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2E1EC8B921A26C8900FA39E3 /* LeoTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1EC8B721A26C8900FA39E3 /* LeoTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E1EC8C021A26C9B00FA39E3 /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1EC8BF21A26C9B00FA39E3 /* TestClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E1EC8B421A26C8900FA39E3 /* LeoTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeoTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E1EC8B721A26C8900FA39E3 /* LeoTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeoTest.h; sourceTree = "<group>"; };
 		2E1EC8B821A26C8900FA39E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E1EC8BF21A26C9B00FA39E3 /* TestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				2E1EC8B721A26C8900FA39E3 /* LeoTest.h */,
 				2E1EC8B821A26C8900FA39E3 /* Info.plist */,
+				2E1EC8BF21A26C9B00FA39E3 /* TestClass.swift */,
 			);
 			path = LeoTest;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					2E1EC8B321A26C8900FA39E3 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1EC8C021A26C9B00FA39E3 /* TestClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		2E1EC8BD21A26C8900FA39E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -270,6 +276,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LeoTest/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -278,6 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.massive.LeoTest;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +294,7 @@
 		2E1EC8BE21A26C8900FA39E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -295,6 +304,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LeoTest/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
